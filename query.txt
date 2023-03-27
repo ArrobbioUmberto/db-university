@@ -9,3 +9,5 @@ QUERY
 4. SELECT * FROM `courses` WHERE `period` = 'I semestre' AND `year` = '1';
 
 5. SELECT * FROM `exams` WHERE `hour` BETWEEN '14:00:00' AND '19:00:00' AND `date` = '2020-06-20';
+
+6.SELECT * FROM `degrees` WHERE `level`='magistrale';
