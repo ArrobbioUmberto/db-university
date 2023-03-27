@@ -5,3 +5,5 @@ QUERY
 2.SELECT * FROM `courses` WHERE `cfu` BETWEEN 11 and 15;
 
 3.SELECT * FROM `students` WHERE `date_of_birth` BETWEEN '1993-01-01' AND '2023-03-27';
+
+4. SELECT * FROM `courses` WHERE `period` = 'I semestre' AND `year` = '1';
