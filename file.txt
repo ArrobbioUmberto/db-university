@@ -4,6 +4,8 @@ QUERY INNER JOIN
 
 2.SELECT * FROM `degrees` INNER JOIN `departments` ON `departments`.`id`= `degrees`.`department_id` WHERE `departments`.`name`= 'Dipartimento di Neuroscienze'AND `degrees`.`level`= 'magistrale';
 
-3.
+3. SELECT * FROM `courses` INNER JOIN `course_teacher` ON `courses`.`id`= `course_teacher`.`course_id` INNER JOIN `teachers` ON `teachers`.`id`= `course_teacher`.`teacher_id` WHERE `teachers`.`name`= 'Fulvio' AND `teachers`.`surname`= 'Amato';
+
+4.
 
 
