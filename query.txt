@@ -4,7 +4,7 @@ QUERY
 
 2.SELECT * FROM `courses` WHERE `cfu` BETWEEN 11 and 15;
 
-3. SELECT * FROM `students` WHERE `date_of_birth` BETWEEN '0000-00-00' AND '1993-03-28';
+3. SELECT *, TIMESTAMPDIFF (YEAR, `date_of_birth`, CURDATE()) as `eta`, DATE_SUB(CURDATE(), INTERVAL 30 YEAR) as `date` FROM `students` WHERE TIMESTAMPDIFF (YEAR, `date_of_birth`, CURDATE()) > 30;
 
 4. SELECT * FROM `courses` WHERE `period` = 'I semestre' AND `year` = '1';
 
