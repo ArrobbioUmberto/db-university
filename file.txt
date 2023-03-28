@@ -2,6 +2,8 @@ QUERY INNER JOIN
 
 1. SELECT * FROM `degrees` INNER JOIN `students` ON `degrees`.`id` = `students`.`degree_id` WHERE `degrees`.`name`= 'Corso di Laurea in Economia';
 
-2.
+2.SELECT * FROM `degrees` INNER JOIN `departments` ON `departments`.`id`= `degrees`.`department_id` WHERE `departments`.`name`= 'Dipartimento di Neuroscienze'AND `degrees`.`level`= 'magistrale';
+
+3.
 
 
