@@ -10,5 +10,7 @@ QUERY INNER JOIN
 
 5.SELECT* FROM `degrees` INNER JOIN `courses` ON `degrees`.`id`= `courses`.`degree_id` INNER JOIN `course_teacher` ON `courses`.`degree_id`=`course_teacher`.`course_id` INNER JOIN `teachers` ON `teachers`.`id`= `course_teacher`.`teacher_id`;
 
+6.SELECT* FROM `teachers` INNER JOIN `course_teacher` ON `teachers`.`id`= `course_teacher`.`teacher_id` INNER JOIN `courses` ON `course_teacher`.`course_id`= `courses`.`id` INNER JOIN `degrees` ON `degrees`.`id`= `courses`.`degree_id` INNER JOIN `departments` ON `departments`.`id`= `degrees`.`department_id` WHERE `departments`.`name`= 'Dipartimento di Matematica';
+
 
 
